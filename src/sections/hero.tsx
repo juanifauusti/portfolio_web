@@ -1,9 +1,9 @@
 import { useRef } from "react";
-import "../../styles/hero.css";
-import Github from "../../assets/icons/github.png";
-import Gmail from "../../assets/icons/gmail.png";
-import Linkedin from "../../assets/icons/linkedin.png";
-import Animation from "../../assets/images/animation.jpg";
+import "../styles/hero.css";
+import Github from "../assets/icons/github.png";
+import Gmail from "../assets/icons/gmail.png";
+import Linkedin from "../assets/icons/linkedin.png";
+import Animation from "../assets/images/animation.jpg";
 
 export default function Hero() {
   const wrapperRef = useRef<HTMLDivElement | null>(null);

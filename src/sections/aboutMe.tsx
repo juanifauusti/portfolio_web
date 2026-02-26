@@ -1,6 +1,6 @@
-import "../../styles/aboutMe.css";
+import "../styles/aboutMe.css";
 import { useState, useEffect } from "react";
-import Me from "../../assets/images/me.jpg";
+import Me from "../assets/images/me.jpg";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 export default function AboutMe() {
