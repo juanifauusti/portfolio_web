@@ -62,7 +62,7 @@ export default function Hero() {
             <img src={Gmail} alt="icono de gmail" />
           </a>
           <a
-            href="www.linkedin.com/in/juana-calzada-099aab2ba"
+            href="https://www.linkedin.com/in/juana-calzada"
             target="_blank"
             rel="noopener noreferrer"
           >

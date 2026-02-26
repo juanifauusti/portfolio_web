@@ -1,0 +1,139 @@
+.about-me {
+  min-height: 100vh;
+  padding: 0 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+}
+
+.about-me h1, h2{
+  font-size: 30px;
+  font-weight: 600;
+  align-self: center;
+}
+
+.about-me h2{
+  margin-top: -30px;
+  font-size: 26px;
+}
+
+.aboutmeContainer {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: #350571;
+  border-radius: 40px;
+  margin-top: -30px;
+}
+
+.profile-pic {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.03);
+}
+
+.aboutmeText {
+  max-width: 450px;
+}
+
+.aboutmeText p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.techCarousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -30px;
+  gap: 10px;
+}
+
+.arrow {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.arrow:hover {
+  transform: scale(1.02);
+}
+
+.techContainer {
+  height: 80px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #350571;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.techContainer:hover {
+  transform: scale(1.02);
+}
+
+.tech-item {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: -50px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #fff;
+}
+
+.dots button {
+  all: unset;
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: -50px 5px 0;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.dots button.active {
+  background-color: #fff;
+}
