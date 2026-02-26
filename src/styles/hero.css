@@ -5,6 +5,25 @@
   min-height: 100vh;
   padding: 0 8%;
   gap: 60px;
+  opacity: 0;
+  transform: translateY(60px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.hero-left,
+.hero-right {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.fade-in-left, .fade-in-right {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.fade-in-right {
+  animation-delay: 0.3s;
 }
 
 .hero-left {
@@ -86,4 +105,11 @@
 .primary:hover {
   transform: translateY(-3px);
   box-shadow: 0 15px 30px rgba(66, 4, 138, 0.35);
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

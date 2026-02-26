@@ -1,5 +1,5 @@
 import "../styles/aboutMe.css";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Me from "../assets/images/me.jpg";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
@@ -15,8 +15,33 @@ export default function AboutMe() {
     "Python",
   ];
 
+  const sectionRef = useRef<HTMLDivElement | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fade, setFade] = useState<boolean>(true);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const currentRef = sectionRef.current;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+        }
+      },
+      { threshold: 0.2 },
+    );
+
+    if (currentRef) {
+      observer.observe(currentRef);
+    }
+
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
+    };
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -49,7 +74,11 @@ export default function AboutMe() {
   };
 
   return (
-    <section className="about-me">
+    <section
+      ref={sectionRef}
+      className={`about-me ${visible ? "fade-in-total" : ""}`}
+    >
+      {" "}
       <h1>Sobre mí</h1>
       <div className="aboutmeContainer">
         <img src={Me} alt="Foto de perfil" className="profile-pic" />
@@ -68,9 +97,7 @@ export default function AboutMe() {
           </p>
         </div>
       </div>
-
       <h2>Tecnologías</h2>
-
       <div className="techCarousel">
         <button
           className="arrow left"
@@ -94,7 +121,6 @@ export default function AboutMe() {
           <FaArrowRight />
         </button>
       </div>
-
       <div className="dots">
         {technologies.map((tech) => (
           <button

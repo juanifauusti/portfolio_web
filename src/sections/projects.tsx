@@ -1,38 +1,40 @@
 import "../styles/projects.css";
-import tostyImage from "../assets/images/tosty.png";
-
-const projectList = [
-  {
-    title: "Tosty - Aplicación móvil",
-    date: "Marzo 2025 - Actualidad",
-    description:
-      "Busca reducir el tiempo en pantalla utilizando herramientas de gamificación.",
-    technologies: ["React Native", "JavaScript"],
-    image: tostyImage,
-    link: "#",
-  },
-  {
-    title: "Landing Page - Proyecto Freelance",
-    date: "Febrero 2026 - Actualidad",
-    description:
-      "Desarrollada para una consultora de juicios familiares, con el objetivo de mejorar su presencia online y atraer nuevos clientes.",
-    technologies: ["React", "TypeScript"],
-    image: "..",
-    link: "#",
-  },
-  {
-    title: "...",
-    date: "...",
-    description: "...",
-    technologies: ["...", "..."],
-    image: "..",
-    link: "#",
-  },
-];
+import { Link } from "react-router-dom";
+import { useState, useEffect, useRef } from "react";
+import { projectList } from "../assets/data/projects";
 
 export default function Projects() {
+  const sectionRef = useRef<HTMLDivElement | null>(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const currentRef = sectionRef.current;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+        }
+      },
+      { threshold: 0.2 },
+    );
+
+    if (currentRef) {
+      observer.observe(currentRef);
+    }
+
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
+    };
+  }, []);
+
   return (
-    <section className="projects">
+    <section
+      ref={sectionRef}
+      className={`projects ${visible ? "fade-in-total" : ""}`}
+    >
       <h1>Mis últimos proyectos</h1>
       <p>
         He trabajado en diferentes proyectos desde páginas web hasta
@@ -58,20 +60,17 @@ export default function Projects() {
                   ))}
                 </div>
               )}
-              <a
-                href={project.link}
-                className="btn"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Link to={`/projects/${project.id}`} className="btn">
                 Ver proyecto
-              </a>
+              </Link>
             </div>
           </div>
         ))}
       </div>
       <div>
-        <button className="btn-primary">Ver más proyectos</button>
+        <Link to="/projects" className="btn-primary">
+          Ver más proyectos
+        </Link>
       </div>
     </section>
   );

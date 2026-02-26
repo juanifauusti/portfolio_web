@@ -5,15 +5,25 @@
   flex-direction: column;
   justify-content: center;
   gap: 60px;
+  opacity: 0;
+  transform: translateY(60px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
 }
 
-.about-me h1, h2{
+.fade-in-total {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.about-me h1,
+h2 {
   font-size: 30px;
   font-weight: 600;
   align-self: center;
 }
 
-.about-me h2{
+.about-me h2 {
   margin-top: -30px;
   font-size: 26px;
 }
@@ -136,4 +146,11 @@
 
 .dots button.active {
   background-color: #fff;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

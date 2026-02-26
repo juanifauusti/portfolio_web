@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
 import "../styles/hero.css";
 import Github from "../assets/icons/github.png";
 import Gmail from "../assets/icons/gmail.png";
@@ -6,6 +6,11 @@ import Linkedin from "../assets/icons/linkedin.png";
 import Animation from "../assets/images/animation.jpg";
 
 export default function Hero() {
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    setVisible(true);
+  }, []);
+
   const wrapperRef = useRef<HTMLDivElement | null>(null);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -38,8 +43,9 @@ export default function Hero() {
   };
 
   return (
-    <section className="hero">
-      <div className="hero-left">
+    <section className={`hero ${visible ? "fade-in" : ""}`}>
+      {" "}
+      <div className={`hero-left ${visible ? "fade-in-left" : ""}`}>
         <h1>Hola, soy Juana</h1>
         <p>
           Desarrolladora Frontend jr en continua formación, con base técnica en
@@ -70,7 +76,7 @@ export default function Hero() {
           </a>
         </div>
       </div>
-      <div className="hero-right">
+      <div className={`hero-right ${visible ? "fade-in-right" : ""}`}>
         <div
           ref={wrapperRef}
           className="image-wrapper"
@@ -83,7 +89,7 @@ export default function Hero() {
             alt="ilustración de una persona trabajando en una computadora"
           />
         </div>
-        <button className="primary">Cambiar el color</button>
+        {/*<button className="primary">Cambiar el color</button>*/}
       </div>
     </section>
   );
