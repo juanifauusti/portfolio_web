@@ -113,3 +113,41 @@
     transform: translateY(0);
   }
 }
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse; 
+    justify-content: center;
+    text-align: center;
+    padding: 20px 5%;
+    gap: 40px;
+    min-height: auto;
+    margin-top: 50px; 
+  }
+
+  .hero-left {
+    max-width: 100%;
+  }
+
+  .hero-left h1 {
+    font-size: 32px; 
+  }
+
+  .hero-left p {
+    height: auto; 
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+
+  .hero-right img {
+    width: 280px;
+  }
+
+  .icons {
+    justify-content: center; 
+  }
+  
+  .image-wrapper img {
+    width: 280px; 
+  }
+}

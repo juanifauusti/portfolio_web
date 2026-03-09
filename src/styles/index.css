@@ -7,8 +7,6 @@
 
 body {
   margin: 0;
-  margin-right: 200px;
-  margin-left: 200px;
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: "Inter", sans-serif;

@@ -1,4 +1,5 @@
 import tostyImage from "../../assets/images/tosty.png";
+import consultoraLogo from "../../assets/images/consultora.jpg";
 
 export interface Project {
   id: string;
@@ -13,6 +14,7 @@ export interface Project {
   image: string;
   github?: string | null;
   live?: string | null;
+  downloadUrl?: string | null;
 }
 
 export const projectList: Project[] = [
@@ -21,19 +23,19 @@ export const projectList: Project[] = [
     title: "Tosty - Aplicación móvil",
     date: "Marzo 2025 - Actualidad",
     description:
-      "Busca reducir el tiempo en pantalla utilizando herramientas de gamificación.",
+      "Aplicación para Android que transforma la reducción del tiempo de pantalla en una experiencia lúdica para combatir el 'pantallismo'.",
     problem:
-      "El uso excesivo del celular afecta la concentración y la productividad en estudiantes.",
+      "El uso compulsivo de dispositivos genera estrés, ansiedad y deterioros en la capacidad de atención y regulación emocional, especialmente en adolescentes.",
     solution:
-      "El usuario se establece metas saludables y tiene una mascota virtual cuya salud depnende de su cumplimiento. Además, se agregaron distintas mecánicas de gamificación para incentivar el uso responsable del celular.",
+      "Un sistema basado en la autorregulación y gamificación donde el bienestar de una mascota virtual depende estrictamente del cumplimiento de los límites de tiempo establecidos por el usuario.",
     features: [
-      "Establecimiento de metas",
-      "Mascota virtual",
-      "Recompensas y logros",
-      "Tienda",
-      "Personalización",
-      "Estadísticas y seguimiento",
-      "Sistema social",
+      "Mascota virtual con estados de salud visuales ",
+      "Seguimiento de uso en tiempo real mediante módulos nativos ",
+      "Sistema de economía interna con monedas, tienda y skins ",
+      "Misiones diarias, logros y sistema de rachas ",
+      "Funcionalidad social para misiones conjuntas con amigos ",
+      "Historial de uso detallado en calendario ",
+      "Notificaciones recordatorias de límites ",
     ],
     technologies: [
       "React Native",
@@ -48,21 +50,28 @@ export const projectList: Project[] = [
     image: tostyImage,
     github: null,
     live: "www.tosty.online",
+    downloadUrl: "/InformeTosty.pdf",
   },
   {
     id: "porlasfamilias",
     title: "Landing Page - Proyecto Freelance",
     date: "Febrero 2026 - Actualidad",
     description:
-      "Desarrollada para una consultora de juicios familiares, con el objetivo de mejorar su presencia online y atraer nuevos clientes.",
+      "Landing page profesional para una consultora enfocada en la captación de clientes y presencia digital.",
     problem:
-      "El cliente tenía una presencia online limitada y necesitaba una plataforma para mostrar sus servicios y atraer nuevos clientes.",
+      "La consultora carecía de una plataforma digital para centralizar sus servicios, presentar a su equipo profesional y brindar confianza a familias en procesos legales complejos.",
     solution:
-      "Se diseñó y desarrolló una landing page moderna y profesional que destaca los servicios ofrecidos, informacion sobre la consultora y un formulario de contacto fácil de usar.",
-    features: ["Diseño responsivo", "Navbar", "Sección de servicios"],
-    technologies: ["React", "TypeScript", "Figma"],
-    challenges: "El mayor desafío fue crear un diseño que transmitiera profesionalismo y confianza, al mismo tiempo que se mantenía moderno y atractivo para los visitantes.",
-    image: "..",
+      "Desarrollo de una interfaz moderna y empática que organiza las categorías de intervención, presenta perfiles profesionales detallados y facilita el contacto directo mediante formularios integrados.",
+    features: [
+      "Diseño responsivo optimizado",
+      "Sección interactiva de servicios",
+      "Navegación intuitiva con enfoque en la experiencia del usuario",
+      "Modales interactivos para información detallada",
+    ],
+    technologies: ["React", "TypeScript", "Figma", "CSS Moderno"],
+    challenges:
+      "El mayor desafío fue equilibrar una estética moderna con la sobriedad y confianza que requiere un servicio de asesoría familiar, además de asegurar una adaptabilidad perfecta en todos los dispositivos.",
+    image: consultoraLogo,
     github: null,
     live: "www.porlasfamilias.com.ar",
   },
