@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { projectList } from "../assets/data/projects";
-import "../styles/ProjectDetail.css";
+import "../styles/projectDetail.css";
 
 export default function ProjectDetail() {
   const { id } = useParams<{ id: string }>();
