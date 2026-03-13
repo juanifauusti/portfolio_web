@@ -42,7 +42,7 @@ export default function Projects() {
       </p>
 
       <div className="projects-grid">
-        {projectList.map((project) => (
+        {projectList.slice(0, 2).map((project) => (
           <div className="project-card" key={project.title}>
             <img src={project.image} alt={project.title} />
             <div className="card-content">

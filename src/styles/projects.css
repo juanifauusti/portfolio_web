@@ -22,10 +22,12 @@
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  width: 100%;
+  width: auto;
   max-width: 1200px;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-card {
@@ -40,6 +42,7 @@
   display: flex;
   flex-direction: column;
   height: 500px;
+  width: 350px;
 }
 
 .project-card:hover {
