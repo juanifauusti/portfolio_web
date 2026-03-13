@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { projectList } from "../assets/data/projects";
-import "../styles/Projects.css";
+import "../styles/projects.css";
 
 export default function AllProjects() {
   return (
