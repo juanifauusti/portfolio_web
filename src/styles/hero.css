@@ -107,6 +107,10 @@
   box-shadow: 0 15px 30px rgba(66, 4, 138, 0.35);
 }
 
+.wpp{
+  border-radius: 20px;
+}
+
 @keyframes fadeUp {
   to {
     opacity: 1;
