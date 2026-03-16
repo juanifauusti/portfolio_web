@@ -76,9 +76,13 @@ export default function ProjectDetail() {
       </div>
 
       <div className="detail-footer">
-        <Link to="/projects" className="view-all-btn">
-          Ver más proyectos
-        </Link>
+        {projectList.length > 2 && (
+          <div>
+            <Link to="/projects" className="btn-primary">
+              Ver más proyectos
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );

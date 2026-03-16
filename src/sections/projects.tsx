@@ -68,9 +68,13 @@ export default function Projects() {
         ))}
       </div>
       <div>
-        <Link to="/projects" className="btn-primary">
-          Ver más proyectos
-        </Link>
+        {projectList.length > 2 && (
+          <div>
+            <Link to="/projects" className="btn-primary">
+              Ver más proyectos
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   );

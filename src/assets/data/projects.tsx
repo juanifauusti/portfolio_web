@@ -74,17 +74,5 @@ export const projectList: Project[] = [
     image: consultoraLogo,
     github: null,
     live: "www.porlasfamilias.com.ar",
-  },
-  {
-    id: "proyecto3",
-    title: "...",
-    date: "...",
-    description: "...",
-    problem: "...",
-    solution: "...",
-    features: ["...", "..."],
-    challenges: "...",
-    technologies: ["...", "..."],
-    image: "..",
-  },
+  }
 ];
