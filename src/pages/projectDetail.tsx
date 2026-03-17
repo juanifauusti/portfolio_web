@@ -25,12 +25,23 @@ export default function ProjectDetail() {
       <div className="project-actions">
         {project.live && (
           <a
-            href={`https://${project.live}`}
+            href={project.live.startsWith('http') ? project.live : `https://${project.live}`}
             target="_blank"
             rel="noopener noreferrer"
             className="external-btn"
           >
             Ir al proyecto
+          </a>
+        )}
+
+        {project.github && (
+          <a
+            href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="download-btn"
+          >
+            Ver Código en GitHub
           </a>
         )}
 
@@ -73,16 +84,6 @@ export default function ProjectDetail() {
           <h2>Desafíos Técnicos</h2>
           <p>{project.challenges}</p>
         </section>
-      </div>
-
-      <div className="detail-footer">
-        {projectList.length > 2 && (
-          <div>
-            <Link to="/projects" className="btn-primary">
-              Ver más proyectos
-            </Link>
-          </div>
-        )}
       </div>
     </div>
   );
