@@ -81,16 +81,17 @@ export const projectList: Project[] = [
     title: "Task Management App",
     date: "Marzo 2026 - Actualidad",
     description:
-      "Aplicación Full Stack para la gestión de tareas diarias con persistencia de datos en la nube.",
+      "Proyecto Full Stack desarrollado para demostrar competencia técnica en la integración de un ecosistema moderno de .NET y React.",
     problem:
-      "La necesidad de una herramienta eficiente para organizar tareas que sea accesible desde cualquier dispositivo y mantenga la información sincronizada en tiempo real.",
+      "La necesidad de validar la arquitectura de una SPA conectada a un backend robusto, manejando operaciones asincrónicas, persistencia real y despliegue en entornos productivos distintos.",
     solution:
-      "Desarrollo de una SPA (Single Page Application) con React conectada a una API robusta en .NET. Se implementó una base de datos PostgreSQL para garantizar que las tareas se mantengan guardadas de forma segura.",
+      "Desarrollo de una API RESTful con ASP.NET Core y Entity Framework, integrada con una base de datos PostgreSQL en Supabase. El frontend en React gestiona el estado de forma eficiente para ofrecer una experiencia fluida.",
     features: [
       "Gestión completa de tareas (Crear, Leer, Actualizar, Eliminar)",
+      "Implementación de arquitectura limpia en el backend",
       "Filtros dinámicos por estado de tarea (Pendientes y Completadas)",
-      "Interfaz de usuario moderna y minimalista con enfoque en UX",
-      "API RESTful documentada con Swagger",
+      "Interfaz de usuario moderna, responsiva y minimalista con enfoque en UX",
+      "Consumo de API asincrónica con Axios",
       "Base de datos relacional integrada con Entity Framework Core",
     ],
     technologies: [
@@ -106,7 +107,7 @@ export const projectList: Project[] = [
     challenges:
       "Los principales desafíos incluyeron la configuración de CORS para la comunicación segura entre Vercel y Render, y la orquestación de migraciones automáticas en un entorno de base de datos PostgreSQL en la nube.",
     image: taskManager,
-    github: "https://github.com/juanifauusti/taskManagement", 
+    github: "https://github.com/juanifauusti/taskManagement",
     live: "task-management-juana.vercel.app",
   },
 ];
