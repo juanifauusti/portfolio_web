@@ -33,6 +33,21 @@
   --tag-text: #5b21b6;
 }
 
+.terminal{
+  --bg-color: #000000;
+  --text-color: #00ff41; 
+  --card-bg: #0a0a0a;
+  --primary: #00ff41;
+  --primary-strong: #008f11;
+  --button-bg: #003b00;
+  --button-text: #00ff41;
+  --tag-bg: #003b00;
+  --tag-text: #00ff41;
+  
+  --font-title: 'JetBrains Mono', 'Courier New', monospace;
+  --font-body: "Lucida Console", Monaco, monospace;
+}
+
 body {
   margin: 0;
   background-color: var(--bg-color);

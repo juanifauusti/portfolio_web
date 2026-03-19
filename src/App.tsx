@@ -48,14 +48,28 @@ function App() {
   }, []);
 
   const toggleTheme = () => {
-    setTheme((prev) => (prev === "light" ? "dark" : "light"));
+    setTheme((prev) => {
+      if (prev === "dark") return "light";
+      if (prev === "light") return "terminal";
+      return "dark";
+    });
+  };
+
+  const getSwitchClass = () => {
+    if (theme === "light") return "pos-light";
+    if (theme === "terminal") return "pos-terminal";
+    return "pos-dark";
   };
 
   return (
     <Router>
       <ScrollToTop />
-      <button className="theme-toggle-switch" onClick={toggleTheme}>
-        <div className={`switch-circle ${theme === "light" ? "active" : ""}`} />
+      <button
+        className={`theme-toggle-switch ${theme}`}
+        onClick={toggleTheme}
+        aria-label="Cambiar tema"
+      >
+        <div className={`switch-circle ${getSwitchClass()}`} />
       </button>
       <Routes>
         <Route path="/" element={<Home />} />
