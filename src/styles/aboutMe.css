@@ -32,7 +32,7 @@ h2 {
   display: flex;
   align-items: center;
   gap: 30px;
-  background-color: #350571;
+  background-color: var(--card-bg);
   border-radius: 40px;
   margin-top: -30px;
 }
@@ -87,7 +87,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #350571;
+  background-color: var(--card-bg);
   border-radius: 40px;
   cursor: pointer;
   transition: transform 0.2s;
@@ -121,7 +121,7 @@ h2 {
 .dot {
   width: 10px;
   height: 10px;
-  background-color: #ccc;
+  background-color: var(--button-bg);
   border-radius: 50%;
   margin: -50px 5px 0;
   cursor: pointer;
@@ -129,7 +129,7 @@ h2 {
 }
 
 .dot.active {
-  background-color: #fff;
+  background-color: var(--button-bg);
 }
 
 .dots button {
@@ -145,7 +145,7 @@ h2 {
 }
 
 .dots button.active {
-  background-color: #fff;
+  background-color: var(--button-bg);
 }
 
 @keyframes fadeUp {

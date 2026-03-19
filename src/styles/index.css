@@ -1,8 +1,36 @@
 :root {
-  --bg-color: #0e0725;
-  --text-color: #ffffff;
   --font-title: "Poppins", sans-serif;
   --font-body: "Inter", sans-serif;
+
+  --bg-color: #0e0725;
+  --text-color: #ffffff;
+
+  --card-bg: #350571;
+
+  --primary: #c9a6ff;
+  --primary-strong: #4c1d95;
+
+  --button-bg: #42048a;
+  --button-text: #ffffff;
+
+  --primary: #c9a6ff;
+  --primary-strong: #4c1d95;
+}
+
+.light {
+  --bg-color: #ffffff;
+  --text-color: #0e0725;
+
+  --card-bg: #7d35c9;
+
+  --primary: #7c3aed;
+  --primary-strong: #5b21b6;
+
+  --button-bg: #42048a;
+  --buton-text: #ffffff;
+
+  --tag-bg: #ede9fe;
+  --tag-text: #5b21b6;
 }
 
 body {
@@ -12,6 +40,7 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   line-height: 1.5;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1,

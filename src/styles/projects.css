@@ -31,10 +31,10 @@
 }
 
 .project-card {
-  background-color: #350571;
+  background-color: var(--bg-color);
   border-radius: 16px;
   overflow: hidden;
-  color: #fff;
+  color: var(--text-color);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition:
     transform 0.3s,
@@ -71,7 +71,7 @@
 .project-date {
   display: block;
   font-size: 12px;
-  color: #ccc;
+  color: var(--text-color);
   margin-bottom: 10px;
 }
 
@@ -81,8 +81,8 @@
 
 .tech-badge {
   display: inline-block;
-  background-color: #1b063e;
-  color: white;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   font-size: 12px;
   font-weight: 300;
   border-radius: 8px;
@@ -130,9 +130,9 @@
   justify-content: center;
   height: 50px;
   width: 200px;
-  background-color: #42048a;
+  background-color: var(--button-bg);
   border-radius: 50px;
-  color: white;
+  color: var(--button-text);
   border: none;
   text-decoration: none;
   cursor: pointer;

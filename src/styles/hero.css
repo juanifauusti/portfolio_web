@@ -90,9 +90,9 @@
   justify-content: center;
   height: 50px;
   width: 160px;
-  background-color: #42048a;
+  background-color: var(--button-bg);
   border-radius: 50px;
-  color: white;
+  color: var(--button-text);
   border: none;
   text-decoration: none;
   cursor: pointer;
