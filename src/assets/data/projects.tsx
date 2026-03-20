@@ -1,6 +1,7 @@
 import tostyImage from "../../assets/images/tosty.png";
 import consultoraLogo from "../../assets/images/consultora.jpg";
 import taskManager from "../../assets/images/taskManager.png";
+import chatbot from "../../assets/images/chatbot.png";
 
 export interface Project {
   id: string;
@@ -109,5 +110,37 @@ export const projectList: Project[] = [
     image: taskManager,
     github: "https://github.com/juanifauusti/taskManagement",
     live: "task-management-juana.vercel.app",
+  },
+  {
+    id: "chatbot",
+    title: "Asistente IA con contexto de un website",
+    date: "Marzo 2026",
+    description:
+      "Chatbot inteligente diseñado para integrarse en sitios web, capaz de responder preguntas específicas basadas en el contenido proporcionado sobre el sitio mediante búsqueda semántica.",
+    problem:
+      "Los modelos de IA genéricos suelen alucinar o no conocer datos específicos de un negocio. Se necesitaba una forma de que el asistente respondiera solo con información real y actualizada del cliente.",
+    solution:
+      "Implementé un sistema RAG utilizando C# y la API de Cohere. El sistema pre-procesa el contenido del sitio en 'chunks' vectorizados y busca el fragmento más relevante mediante Similitud de Coseno antes de generar la respuesta final.",
+    features: [
+      "Búsqueda semántica",
+      "Integración fluida con base de datos en Supabase",
+      "Widget ligero en HTML/JavaScript nativo para fácil utilización",
+      "Arquitectura escalable desplegada en Render",
+    ],
+    technologies: [
+      "C#",
+      "ASP.NET Core",
+      "Cohere API",
+      "Supabase",
+      "Render",
+      "JavaScript",
+      "Vercel",
+    ],
+    challenges:
+      "El mayor desafío fue la migración técnica del motor de IA de Gemini a Cohere a mitad del desarrollo, lo que implicó reescribir la lógica de normalización de vectores, ajustar los prompts del sistema (preambles) y asegurar que el widget de frontend mantuviera una latencia baja tras el cambio de infraestructura.",
+    image: chatbot,
+    github: "https://github.com/juanifauusti/website-chatbot", 
+    live: "https://website-chatbot-juana.vercel.app",
+    downloadUrl: null,
   },
 ];
