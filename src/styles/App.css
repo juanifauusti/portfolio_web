@@ -5,7 +5,7 @@
 }
 
 .theme-toggle-switch {
-  position: fixed;
+  position: absolute;
   top: 20px;
   right: 20px;
   width: 75px;
@@ -47,4 +47,18 @@
 .theme-toggle-switch.terminal {
   border-color: #00ff41;
   background: #051a05;
+}
+
+@media (max-width: 768px) {
+  .theme-toggle-switch {
+    top: 15px;
+    right: 15px;
+    transform: scale(0.9);    
+    background: var(--card-bg);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .app-container {
+    padding: 0 15px;
+  }
 }

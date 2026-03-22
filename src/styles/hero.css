@@ -67,6 +67,8 @@
   display: flex;
   gap: 20px;
   margin-top: 20px;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
 }
 
 .icons img {
@@ -101,6 +103,8 @@
   font-weight: 500;
   box-shadow: 0 8px 20px rgba(66, 4, 138, 0.25);
   transition: all 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
 }
 
 .primary:hover {
@@ -155,6 +159,11 @@
 
   .hero-left {
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    order: 2;
   }
 
   .hero-left h1 {
@@ -167,12 +176,22 @@
     margin-bottom: 25px;
   }
 
+  .primary{
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 200px;
+  }
+
   .hero-right img {
-    width: 280px;
+    perspective: none;
+    z-index: 1; 
+    order: 1;
   }
 
   .icons {
     justify-content: center;
+    width: 100%;
+    margin-top: 10px;
   }
 
   .image-wrapper img {
