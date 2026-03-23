@@ -29,6 +29,8 @@ function App() {
       : "light";
   });
 
+  const [isOpen, setIsOpen] = useState(false);
+
   useEffect(() => {
     document.body.className = theme;
     localStorage.setItem("theme", theme);
@@ -47,16 +49,44 @@ function App() {
     return () => mediaQuery.removeEventListener("change", handleChange);
   }, []);
 
-  const toggleTheme = () => {
-    setTheme((prev) => (prev === "light" ? "dark" : "light"));
-  };
+  const themes = [
+    { id: "dark", label: "Oscuro" },
+    { id: "light", label: "Claro" },
+    { id: "terminal", label: "Terminal" },
+    { id: "nature", label: "Nature" },
+    { id: "cyberpunk", label: "Cyberpunk" },
+  ];
 
   return (
     <Router>
       <ScrollToTop />
-      <button className="theme-toggle-switch" onClick={toggleTheme}>
-        <div className={`switch-circle ${theme === "light" ? "active" : ""}`} />
-      </button>
+
+      <div className={`theme-menu-container ${isOpen ? "open" : ""}`}>
+        <button
+          className={`main-theme-btn ${theme}`}
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label="Abrir menú de temas"
+        >
+          <div className="current-theme-indicator" />
+        </button>
+
+        <div className="theme-options">
+          {themes.map((t) => (
+            <button
+              key={t.id}
+              className={`theme-opt-btn ${theme === t.id ? "active" : ""}`}
+              onClick={() => {
+                setTheme(t.id);
+                setIsOpen(false);
+              }}
+              title={t.label}
+            >
+              <span className={`dot ${t.id}`} />
+            </button>
+          ))}
+        </div>
+      </div>
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<AllProjects />} />

@@ -18,19 +18,70 @@
 }
 
 .light {
-  --bg-color: #ffffff;
-  --text-color: #0e0725;
+  --bg-color: #f8f9fa;       
+  --text-color: #1a1a1a;     
 
-  --card-bg: #7d35c9;
+  --card-bg: #e9d5ff;        
 
-  --primary: #7c3aed;
-  --primary-strong: #5b21b6;
+  --primary: #6d28d9;        
+  --primary-strong: #4c1d95;
 
-  --button-bg: #42048a;
-  --buton-text: #ffffff;
+  --button-bg: #6d28d9;      
+  --button-text: #ffffff;
 
-  --tag-bg: #ede9fe;
-  --tag-text: #5b21b6;
+  --tag-bg: #ffffff;         
+  --tag-text: #6d28d9;
+}
+
+.terminal{
+  --bg-color: #000000;
+  --text-color: #00ff41; 
+  --card-bg: #0a0a0a;
+  --primary: #00ff41;
+  --primary-strong: #008f11;
+  --button-bg: #003b00;
+  --button-text: #00ff41;
+  --tag-bg: #003b00;
+  --tag-text: #00ff41;
+  
+  --font-title: 'JetBrains Mono', 'Courier New', monospace;
+  --font-body: "Lucida Console", Monaco, monospace;
+}
+
+.nature {
+  --bg-color: #fdfaf5;       
+  --text-color: #2d3e30;     
+  --card-bg: #d1cc98;        
+  
+  --primary: #6b8e23;        
+  --primary-strong: #4a5d23; 
+  
+  --button-bg: #8b7355;      
+  --button-text: #ffffff;
+  
+  --tag-bg: #dce3c5;         
+  --tag-text: #4a5d23;
+
+  --font-title: "Georgia", serif; 
+  --font-body: "Inter", sans-serif;
+}
+
+.cyberpunk {
+  --bg-color: #050505;       
+  --text-color: #00ffff;     
+  --card-bg: #1a0033;        
+  
+  --primary: #ff00ff;        
+  --primary-strong: #bc00bc; 
+  
+  --button-bg: #ff00ff;      
+  --button-text: #000000;
+  
+  --tag-bg: #330066;         
+  --tag-text: #ff00ff;
+
+  --font-title: "Orbitron", sans-serif; 
+  --font-body: "Space Mono", monospace;
 }
 
 body {

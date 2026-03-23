@@ -14,6 +14,8 @@
   color: var(--primary);
   font-weight: 500;
   transition: 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
 }
 
 .project-detail a:hover {
@@ -45,6 +47,8 @@
 .external-btn {
   background-color: var(--button-bg);
   color: var(--button-text) !important;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
 }
 
 .external-btn:hover {
@@ -56,6 +60,8 @@
   background-color: transparent;
   color: var(--text-color) !important;
   border: 2px solid var(--primary);
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
 }
 
 .download-btn:hover {
