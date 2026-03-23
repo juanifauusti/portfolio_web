@@ -142,7 +142,7 @@
 .nature .icons img {
   filter: brightness(0) saturate(100%) invert(56%) sepia(11%) saturate(1917%)
     hue-rotate(36deg) brightness(91%) contrast(85%);
-  opacity: 0.9; 
+  opacity: 0.9;
   transition: all 0.3s ease;
 }
 
@@ -150,11 +150,46 @@
   filter: brightness(0) saturate(100%) invert(31%) sepia(21%) saturate(1142%)
     hue-rotate(36deg) brightness(96%) contrast(92%);
   opacity: 1;
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 .nature .icons img.wpp {
   display: none;
+}
+
+.cyberpunk .icons img {
+  filter: brightness(0) saturate(100%) invert(13%) sepia(95%) saturate(7483%)
+    hue-rotate(297deg) brightness(100%) contrast(105%) drop-shadow(0 0 2px var(--primary));
+  opacity: 0.8;
+  transition: all 0.3s cubic-b  ezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.cyberpunk .icons a:hover img {
+  filter: brightness(0) saturate(100%) invert(80%) sepia(50%) saturate(5000%)
+    hue-rotate(180deg) brightness(1.2) contrast(1.2) drop-shadow(0 0 8px #00ffff) drop-shadow(0 0 15px #00ffff);
+  opacity: 1;
+  transform: scale(1.3) rotate(5deg);
+}
+
+.cyberpunk .icons img.wpp {
+  display: none;
+}
+
+.cyberpunk .primary {
+  border: 2px solid var(--primary);
+  box-shadow:
+    0 0 10px var(--primary),
+    inset 0 0 5px var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.cyberpunk .primary:hover {
+  background: transparent;
+  color: var(--primary);
+  box-shadow:
+    0 0 20px var(--primary),
+    0 0 40px var(--primary);
 }
 
 @keyframes fadeUp {
@@ -194,7 +229,7 @@
     margin-bottom: 25px;
   }
 
-  .primary{
+  .primary {
     margin-bottom: 20px;
     width: 100%;
     max-width: 200px;
@@ -202,7 +237,7 @@
 
   .hero-right img {
     perspective: none;
-    z-index: 1; 
+    z-index: 1;
     order: 1;
   }
 

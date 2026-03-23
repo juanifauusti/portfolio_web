@@ -54,6 +54,7 @@ function App() {
     { id: "light", label: "Claro" },
     { id: "terminal", label: "Terminal" },
     { id: "nature", label: "Nature" },
+    { id: "cyberpunk", label: "Cyberpunk" },
   ];
 
   return (

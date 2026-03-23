@@ -30,7 +30,7 @@ h2 {
 
 .aboutmeContainer {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   gap: 30px;
   background-color: var(--card-bg);
   border-radius: 40px;
@@ -39,7 +39,7 @@ h2 {
 
 .profile-pic {
   width: 320px;
-  height: 320px;
+  min-height: 100%;
   object-fit: cover;
   border-top-left-radius: 40px;
   border-bottom-left-radius: 40px;
@@ -100,7 +100,7 @@ h2 {
 }
 
 .tech-item {
-  color: #fff;
+  color: var(--primary); 
   font-size: 24px;
   font-weight: 600;
   transition: opacity 0.3s ease;

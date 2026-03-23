@@ -18,19 +18,19 @@
 }
 
 .light {
-  --bg-color: #ffffff;
-  --text-color: #0e0725;
+  --bg-color: #f8f9fa;       
+  --text-color: #1a1a1a;     
 
-  --card-bg: #7d35c9;
+  --card-bg: #e9d5ff;        
 
-  --primary: #7c3aed;
-  --primary-strong: #5b21b6;
+  --primary: #6d28d9;        
+  --primary-strong: #4c1d95;
 
-  --button-bg: #42048a;
-  --buton-text: #ffffff;
+  --button-bg: #6d28d9;      
+  --button-text: #ffffff;
 
-  --tag-bg: #ede9fe;
-  --tag-text: #5b21b6;
+  --tag-bg: #ffffff;         
+  --tag-text: #6d28d9;
 }
 
 .terminal{
@@ -64,6 +64,24 @@
 
   --font-title: "Georgia", serif; 
   --font-body: "Inter", sans-serif;
+}
+
+.cyberpunk {
+  --bg-color: #050505;       
+  --text-color: #00ffff;     
+  --card-bg: #1a0033;        
+  
+  --primary: #ff00ff;        
+  --primary-strong: #bc00bc; 
+  
+  --button-bg: #ff00ff;      
+  --button-text: #000000;
+  
+  --tag-bg: #330066;         
+  --tag-text: #ff00ff;
+
+  --font-title: "Orbitron", sans-serif; 
+  --font-body: "Space Mono", monospace;
 }
 
 body {
