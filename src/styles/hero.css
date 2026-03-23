@@ -139,6 +139,24 @@
     drop-shadow(0 0 8px #00ff41);
 }
 
+.nature .icons img {
+  filter: brightness(0) saturate(100%) invert(56%) sepia(11%) saturate(1917%)
+    hue-rotate(36deg) brightness(91%) contrast(85%);
+  opacity: 0.9; 
+  transition: all 0.3s ease;
+}
+
+.nature .icons a:hover img {
+  filter: brightness(0) saturate(100%) invert(31%) sepia(21%) saturate(1142%)
+    hue-rotate(36deg) brightness(96%) contrast(92%);
+  opacity: 1;
+  transform: scale(1.1); 
+}
+
+.nature .icons img.wpp {
+  display: none;
+}
+
 @keyframes fadeUp {
   to {
     opacity: 1;

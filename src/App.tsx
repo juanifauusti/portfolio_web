@@ -29,6 +29,8 @@ function App() {
       : "light";
   });
 
+  const [isOpen, setIsOpen] = useState(false);
+
   useEffect(() => {
     document.body.className = theme;
     localStorage.setItem("theme", theme);
@@ -47,30 +49,43 @@ function App() {
     return () => mediaQuery.removeEventListener("change", handleChange);
   }, []);
 
-  const toggleTheme = () => {
-    setTheme((prev) => {
-      if (prev === "dark") return "light";
-      if (prev === "light") return "terminal";
-      return "dark";
-    });
-  };
-
-  const getSwitchClass = () => {
-    if (theme === "light") return "pos-light";
-    if (theme === "terminal") return "pos-terminal";
-    return "pos-dark";
-  };
+  const themes = [
+    { id: "dark", label: "Oscuro" },
+    { id: "light", label: "Claro" },
+    { id: "terminal", label: "Terminal" },
+    { id: "nature", label: "Nature" },
+  ];
 
   return (
     <Router>
       <ScrollToTop />
-      <button
-        className={`theme-toggle-switch ${theme}`}
-        onClick={toggleTheme}
-        aria-label="Cambiar tema"
-      >
-        <div className={`switch-circle ${getSwitchClass()}`} />
-      </button>
+
+      <div className={`theme-menu-container ${isOpen ? "open" : ""}`}>
+        <button
+          className={`main-theme-btn ${theme}`}
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label="Abrir menú de temas"
+        >
+          <div className="current-theme-indicator" />
+        </button>
+
+        <div className="theme-options">
+          {themes.map((t) => (
+            <button
+              key={t.id}
+              className={`theme-opt-btn ${theme === t.id ? "active" : ""}`}
+              onClick={() => {
+                setTheme(t.id);
+                setIsOpen(false);
+              }}
+              title={t.label}
+            >
+              <span className={`dot ${t.id}`} />
+            </button>
+          ))}
+        </div>
+      </div>
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<AllProjects />} />

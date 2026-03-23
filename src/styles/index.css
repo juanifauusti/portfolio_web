@@ -48,6 +48,24 @@
   --font-body: "Lucida Console", Monaco, monospace;
 }
 
+.nature {
+  --bg-color: #fdfaf5;       
+  --text-color: #2d3e30;     
+  --card-bg: #d1cc98;        
+  
+  --primary: #6b8e23;        
+  --primary-strong: #4a5d23; 
+  
+  --button-bg: #8b7355;      
+  --button-text: #ffffff;
+  
+  --tag-bg: #dce3c5;         
+  --tag-text: #4a5d23;
+
+  --font-title: "Georgia", serif; 
+  --font-body: "Inter", sans-serif;
+}
+
 body {
   margin: 0;
   background-color: var(--bg-color);
