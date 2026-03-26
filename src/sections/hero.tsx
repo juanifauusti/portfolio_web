@@ -93,7 +93,6 @@ export default function Hero() {
             alt="ilustración de una persona trabajando en una computadora"
           />
         </div>
-        {/*<button className="primary">Cambiar el color</button>*/}
       </div>
     </section>
   );
