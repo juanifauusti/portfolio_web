@@ -112,19 +112,11 @@
   box-shadow: 0 15px 30px rgba(66, 4, 138, 0.35);
 }
 
-.wpp {
-  border-radius: 20px;
-}
-
 .terminal .icons img {
   filter: brightness(0) saturate(100%) invert(48%) sepia(79%) saturate(2476%)
     hue-rotate(86deg) brightness(118%) contrast(119%);
   opacity: 0.8;
   transition: all 0.3s ease;
-}
-
-.terminal .icons img.wpp {
-  display: none;
 }
 
 .terminal .icons a:hover img {
@@ -153,10 +145,6 @@
   transform: scale(1.1);
 }
 
-.nature .icons img.wpp {
-  display: none;
-}
-
 .cyberpunk .icons img {
   filter: brightness(0) saturate(100%) invert(13%) sepia(95%) saturate(7483%)
     hue-rotate(297deg) brightness(100%) contrast(105%) drop-shadow(0 0 2px var(--primary));
@@ -169,10 +157,6 @@
     hue-rotate(180deg) brightness(1.2) contrast(1.2) drop-shadow(0 0 8px #00ffff) drop-shadow(0 0 15px #00ffff);
   opacity: 1;
   transform: scale(1.3) rotate(5deg);
-}
-
-.cyberpunk .icons img.wpp {
-  display: none;
 }
 
 .cyberpunk .primary {
