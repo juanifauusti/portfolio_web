@@ -1,16 +1,18 @@
 import "../styles/aboutMe.css";
 import { useState, useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import Me from "../assets/images/me.jpg";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 export default function AboutMe() {
+  const { t } = useTranslation("translation");
   const technologies = [
     "React",
     "React Native",
     "TypeScript",
     "JavaScript",
     "C#",
-    "Ecosistema .NET",
+    ".NET",
     "SQL Server",
     "Python",
   ];
@@ -79,25 +81,15 @@ export default function AboutMe() {
       className={`about-me ${visible ? "fade-in-total" : ""}`}
     >
       {" "}
-      <h1>Sobre mí</h1>
+      <h1>{t("about.title")}</h1>
       <div className="aboutmeContainer">
         <img src={Me} alt="Foto de perfil" className="profile-pic" />
         <div className="aboutmeText">
-          <p>
-            Actualmente curso Ingeniería en Informática y me gradué de un
-            colegio técnico con orientación en informática. Esta base me
-            permitió desarrollar una mirada estructurada y sólida para la
-            resolución de problemas.
-          </p>
-          <p>
-            Tengo experiencia en desarrollo de interfaces mediante una
-            estructura basada en componentes, priorizando reutilización,
-            organización del código y adaptación responsive. Experiencia en
-            implementación, testing visual y procesos de despliegue.
-          </p>
+          <p>{t("about.p1")}</p>
+          <p>{t("about.p2")}</p>
         </div>
       </div>
-      <h2>Tecnologías</h2>
+      <h2>{t("about.tech_title")}</h2>
       <div className="techCarousel">
         <button
           className="arrow left"

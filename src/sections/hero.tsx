@@ -1,4 +1,5 @@
 import { useRef, useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import "../styles/hero.css";
 import Github from "../assets/icons/github.png";
 import Gmail from "../assets/icons/gmail.png";
@@ -7,6 +8,7 @@ import Linkedin from "../assets/icons/linkedin.png";
 import Animation from "../assets/images/animation.jpg";
 
 export default function Hero() {
+  const { t } = useTranslation("translation");
   const [visible, setVisible] = useState(false);
   useEffect(() => {
     setVisible(true);
@@ -47,15 +49,10 @@ export default function Hero() {
     <section className={`hero ${visible ? "fade-in" : ""}`}>
       {" "}
       <div className={`hero-left ${visible ? "fade-in-left" : ""}`}>
-        <h1>Hola, soy Juana</h1>
-        <p>
-          Desarrolladora Frontend jr en continua formación, con base técnica en
-          informática y experiencia en proyectos reales. Interesada en seguir
-          creciendo y crear interfaces claras, funcionales y centradas en el
-          usuario.
-        </p>
+        <h1>{t("hero.title")}</h1>
+        <p>{t("hero.description")}</p>
         <a href="/JuanaCalzada-CV.pdf" download className="primary">
-          Descargar CV
+          {t("hero.cv_button")}
         </a>
         <div className="icons">
           <a
@@ -75,8 +72,11 @@ export default function Hero() {
           >
             <img src={Linkedin} alt="icono de linkedin" />
           </a>
-          <a href="https://wa.me/5491166144123?text=Hola%20me%20interesa%20tu%20trabajo" target="_blank">
-            <img src={Wpp} alt="icono de whatsapp" className="wpp"/>
+          <a
+            href="https://wa.me/5491166144123?text=Hola%20me%20interesa%20tu%20trabajo"
+            target="_blank"
+          >
+            <img src={Wpp} alt="icono de whatsapp" className="wpp" />
           </a>
         </div>
       </div>

@@ -2,8 +2,10 @@ import "../styles/projects.css";
 import { Link } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 import { projectList } from "../assets/data/projects";
+import { useTranslation } from "react-i18next";
 
 export default function Projects() {
+  const { t } = useTranslation(["translation", "projects"]);
   const sectionRef = useRef<HTMLDivElement | null>(null);
   const [visible, setVisible] = useState(false);
 
@@ -35,22 +37,17 @@ export default function Projects() {
       ref={sectionRef}
       className={`projects ${visible ? "fade-in-total" : ""}`}
     >
-      <h1>Mis últimos proyectos</h1>
-      <p>
-        He trabajado en diferentes proyectos desde páginas web hasta
-        aplicaciones móviles
-      </p>
+      <h1>{t("translation:projects_section.title")}</h1>
+      <p>{t("translation:projects_section.subtitle")}</p>
 
       <div className="projects-grid">
         {projectList.slice(0, 2).map((project) => (
-          <div className="project-card" key={project.title}>
-            <img src={project.image} alt={project.title} />
+          <div className="project-card" key={project.id}>
+            <img src={project.image} alt={t(`projects:${project.id}.title`)} />
             <div className="card-content">
-              <h3>{project.title}</h3>
-              {project.date && (
-                <span className="project-date">{project.date}</span>
-              )}
-              <p>{project.description}</p>
+              <h3>{t(`projects:${project.id}.title`)}</h3>
+              {t(`projects:${project.id}.date`)}
+              <p>{t(`projects:${project.id}.description`)}</p>
               {project.technologies && (
                 <div className="project-tech">
                   {project.technologies.map((tech) => (
@@ -61,7 +58,7 @@ export default function Projects() {
                 </div>
               )}
               <Link to={`/projects/${project.id}`} className="btn">
-                Ver proyecto
+                {t("translation:projects_section.view_project")}
               </Link>
             </div>
           </div>
@@ -71,7 +68,7 @@ export default function Projects() {
         {projectList.length > 2 && (
           <div>
             <Link to="/projects" className="btn-primary">
-              Ver más proyectos
+              {t("translation:projects_section.view_more")}
             </Link>
           </div>
         )}

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./styles/App.css";
 import ScrollToTop from "./components/scrollToTop";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import { useTranslation } from "react-i18next";
 import Hero from "./sections/hero";
 import AboutMe from "./sections/aboutMe";
 import Projects from "./sections/projects";
@@ -20,6 +20,13 @@ function Home() {
 }
 
 function App() {
+  const { i18n } = useTranslation();
+
+  const toggleLanguage = () => {
+    const newLang = i18n.language.startsWith("es") ? "en" : "es";
+    i18n.changeLanguage(newLang);
+  };
+
   const [theme, setTheme] = useState(() => {
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme) return savedTheme;
@@ -85,6 +92,12 @@ function App() {
             </button>
           ))}
         </div>
+      </div>
+
+      <div className="lang-switcher-container">
+        <button onClick={toggleLanguage} className="lang-btn">
+          {i18n.language.startsWith("es") ? "EN" : "ES"}
+        </button>
       </div>
 
       <Routes>

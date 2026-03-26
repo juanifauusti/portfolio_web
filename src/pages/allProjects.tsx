@@ -1,26 +1,29 @@
 import { Link } from "react-router-dom";
 import { projectList } from "../assets/data/projects";
 import "../styles/projects.css";
+import { useTranslation } from "react-i18next";
 
 export default function AllProjects() {
+  const { t } = useTranslation(["translation", "projects"]);
+
   return (
     <section className="projects fade-in-total">
-      {" "}
-      <Link className="back-link" to="/">← Volver</Link>
-      <h1>Todos mis proyectos</h1>
-      <p>Explorá el listado completo de mis trabajos</p>
+      <Link className="back-link" to="/">
+        {t("translation:all_projects.back")}
+      </Link>
+      <h1>{t("translation:all_projects.title")}</h1>
+      <p>{t("translation:all_projects.subtitle")}</p>
+
       <div className="projects-grid">
         {projectList.map((project) => (
           <div className="project-card" key={project.id}>
-            <img src={project.image} alt={project.title} />
+            <img src={project.image} alt={t(`projects:${project.id}.title`)} />
             <div className="card-content">
-              <h3>{project.title}</h3>
+              <h3>{t(`projects:${project.id}.title`)}</h3>
 
-              {project.date && (
-                <span className="project-date">{project.date}</span>
-              )}
+              {t(`projects:${project.id}.date`)}
 
-              <p>{project.description}</p>
+              <p>{t(`projects:${project.id}.description`)}</p>
 
               {project.technologies && (
                 <div className="project-tech">
@@ -33,7 +36,7 @@ export default function AllProjects() {
               )}
 
               <Link to={`/projects/${project.id}`} className="btn">
-                Ver proyecto
+                {t("translation:projects_section.view_project")}
               </Link>
             </div>
           </div>

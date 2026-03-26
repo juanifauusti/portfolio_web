@@ -1,0 +1,63 @@
+{
+    "tosty": {
+        "title": "Tosty - Mobile App",
+        "date": "March 2025 - Present",
+        "description": "Android application that transforms screen time reduction into a playful experience to combat excessive screen time.",
+        "problem": "Compulsive device use generates stress, anxiety, and deteriorates attention span and emotional regulation, especially in adolescents.",
+        "solution": "A system based on self-regulation and gamification where the well-being of a virtual pet strictly depends on compliance with the time limits set by the user.",
+        "features": [
+            "Virtual pet with visual health states",
+            "Real-time usage tracking via native modules",
+            "Internal economy system with coins, store, and skins",
+            "Daily missions, achievements, and streak system",
+            "Social functionality for joint missions with friends",
+            "Detailed usage history in a calendar",
+            "Limit reminder notifications"
+        ],
+        "challenges": "The biggest challenges were related to utilizing background processes without affecting app performance, implementing mobile usage tracking, and finding an aesthetic that was attractive, unique, and friendly."
+    },
+    "porlasfamilias": {
+        "title": "Landing Page - Freelance Project",
+        "date": "February 2026 - Present",
+        "description": "Professional landing page for a consulting firm focused on client acquisition and digital presence.",
+        "problem": "The consulting firm lacked a digital platform to centralize its services, present its professional team, and provide confidence to families in complex legal processes.",
+        "solution": "Development of a modern and empathetic interface that organizes intervention categories, presents detailed professional profiles, and facilitates direct contact through integrated forms.",
+        "features": [
+            "Optimized responsive design",
+            "Interactive services section",
+            "Intuitive navigation focused on user experience",
+            "Interactive modals for detailed information"
+        ],
+        "challenges": "The biggest challenge was balancing a modern aesthetic with the sobriety and trust required for a family counseling service, as well as ensuring perfect adaptability across all devices."
+    },
+    "task-management": {
+        "title": "Task Management App",
+        "date": "March 2026 - Present",
+        "description": "Full Stack project developed to demonstrate technical competence in integrating a modern .NET and React ecosystem.",
+        "problem": "The need to validate the architecture of an SPA connected to a robust backend, managing asynchronous operations, real persistence, and deployment across different production environments.",
+        "solution": "Development of a RESTful API with ASP.NET Core and Entity Framework, integrated with a PostgreSQL database in Supabase. The React frontend efficiently manages the state to offer a fluid experience.",
+        "features": [
+            "Complete task management (Create, Read, Update, Delete)",
+            "Implementation of clean architecture in the backend",
+            "Dynamic filters by task status (Pending and Completed)",
+            "Modern, responsive, and minimalist user interface focusing on UX",
+            "Asynchronous API consumption with Axios",
+            "Relational database integrated with Entity Framework Core"
+        ],
+        "challenges": "The main challenges included configuring CORS for secure communication between Vercel and Render, and orchestrating automatic migrations in a cloud PostgreSQL database environment."
+    },
+    "chatbot": {
+        "title": "AI Assistant with website context",
+        "date": "March 2026",
+        "description": "Intelligent chatbot designed to integrate into websites, capable of answering specific questions based on the provided site content using semantic search.",
+        "problem": "Generic AI models often hallucinate or lack knowledge of specific business data. A solution was needed for the assistant to respond only with real and updated client information.",
+        "solution": "I implemented a RAG system using C# and the Cohere API. The system pre-processes the site content into vectorized 'chunks' and searches for the most relevant fragment using Cosine Similarity before generating the final response.",
+        "features": [
+            "Semantic search",
+            "Seamless integration with Supabase database",
+            "Lightweight widget in native HTML/JavaScript for easy integration",
+            "Scalable architecture deployed on Render"
+        ],
+        "challenges": "The biggest challenge was the technical migration of the AI engine from Gemini to Cohere mid-development, which involved rewriting the vector normalization logic, adjusting system prompts (preambles), and ensuring the frontend widget maintained low latency after the infrastructure change."
+    }
+}

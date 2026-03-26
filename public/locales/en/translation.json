@@ -1,0 +1,35 @@
+{
+  "hero": {
+    "title": "Hi, I'm Juana",
+    "description": "Junior Frontend Developer in continuous training, with a technical background in IT and experience in real projects. Passionate about continuous growth and creating clear, functional, and user-centered interfaces.",
+    "cv_button": "Download CV"
+  },
+  "about": {
+    "title": "About Me",
+    "p1": "I am currently studying Computer Engineering and graduated from a technical high school specializing in IT. This background allowed me to develop a structured and solid approach to problem-solving.",
+    "p2": "I have experience in interface development using a component-based structure, prioritizing reusability, code organization, and responsive adaptation. Experience in implementation, visual testing, and deployment processes.",
+    "tech_title": "Technologies"
+  },
+  "projects_section": {
+    "title": "My latest projects",
+    "subtitle": "I have worked on various projects ranging from websites to mobile applications",
+    "view_project": "View project",
+    "view_more": "View more projects"
+  },
+  "all_projects": {
+    "back": "← Back",
+    "title": "All my projects",
+    "subtitle": "Explore the complete list of my work"
+  },
+  "project_detail": {
+    "back": "← Back to projects",
+    "not_found": "Project not found",
+    "go_live": "Go to project",
+    "view_github": "View Code on GitHub",
+    "download_docs": "Download Documentation",
+    "problem_title": "Problem",
+    "solution_title": "Solution",
+    "features_title": "Features",
+    "challenges_title": "Technical Challenges"
+  }
+}
