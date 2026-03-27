@@ -3,6 +3,7 @@ import "./styles/App.css";
 import ScrollToTop from "./components/scrollToTop";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { Analytics } from "@vercel/analytics/react";
 import Hero from "./sections/hero";
 import AboutMe from "./sections/aboutMe";
 import Projects from "./sections/projects";
@@ -105,6 +106,7 @@ function App() {
         <Route path="/projects" element={<AllProjects />} />
         <Route path="/projects/:id" element={<ProjectDetail />} />
       </Routes>
+      <Analytics />
     </Router>
   );
 }
