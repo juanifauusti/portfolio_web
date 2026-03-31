@@ -15,6 +15,12 @@ export default function AboutMe() {
     ".NET",
     "SQL Server",
     "Python",
+    "Node.js",
+    "Vercel",
+    "Express",
+    "MongoDB",
+    "MySQL",
+    "Prisma"
   ];
 
   const sectionRef = useRef<HTMLDivElement | null>(null);
