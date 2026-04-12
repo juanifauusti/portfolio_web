@@ -5,7 +5,6 @@ import Github from "../assets/icons/github.png";
 import Gmail from "../assets/icons/gmail.png";
 import Wpp from "../assets/icons/wpp.png";
 import Linkedin from "../assets/icons/linkedin.png";
-import Calendly from "../assets/icons/calendly.png";
 import Animation from "../assets/images/animation.jpg";
 
 export default function Hero() {
