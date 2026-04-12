@@ -74,15 +74,6 @@ export default function Hero() {
             <img src={Linkedin} alt="icono de linkedin" />
           </a>
           <a
-            href="https://calendly.com/juanacalzada01"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Agendar reunión"
-            className="calendly-icon"
-          >
-            <img src={Calendly} alt="icono de calendly" />
-          </a>
-          <a
             href="https://wa.me/5491166144123?text=Hola%20me%20interesa%20tu%20trabajo"
             target="_blank"
           >
