@@ -51,9 +51,22 @@ export default function Hero() {
       <div className={`hero-left ${visible ? "fade-in-left" : ""}`}>
         <h1>{t("hero.title")}</h1>
         <p>{t("hero.description")}</p>
-        <a href="/JuanaCalzada-CV.pdf" download className="primary">
-          {t("hero.cv_button")}
-        </a>
+        <div className="cv-dropdown">
+          <button className="primary cv-main-btn">
+            {t("hero.cv_button", { defaultValue: "Descargar CV" })}
+          </button>
+          <div className="dropdown-content">
+            <a href="/JuanaCalzada-Dev.pdf" download>
+              DEV
+            </a>
+            <a href="/JuanaCalzada-QA.pdf" download>
+              QA
+            </a>
+            <a href="/JuanaCalzada-English.pdf" download>
+              English
+            </a>
+          </div>
+        </div>
         <div className="icons">
           <a
             href="https://github.com/juanifauusti"
