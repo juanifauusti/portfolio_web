@@ -133,11 +133,11 @@
 }
 
 .tech-tag {
-  background: var(--tag-bg);
+  background: var(--primary-strong);
   padding: 5px 10px;
   border-radius: 12px;
   font-size: 13px;
-  color: var(--tag-text);
+  color: var(--primary);
 }
 
 .view-all-btn {

@@ -101,6 +101,27 @@ export default function ProjectDetail() {
           <h2>{t("translation:project_detail.challenges_title")}</h2>
           <p>{t(`projects:${project.id}.challenges`)}</p>
         </section>
+
+        {t(`projects:${project.id}.QADescription`) && (
+          <section className="qa-section">
+            <h2>
+              {t("translation:project_detail.qa_title", {
+                defaultValue: "Estrategia de Calidad & QA",
+              })}
+            </h2>
+            <p>{t(`projects:${project.id}.QADescription`)}</p>
+            <ul>
+              {(
+                t(`projects:${project.id}.QAPoints`, {
+                  returnObjects: true,
+                  defaultValue: [],
+                }) as string[]
+              ).map((point, index) => (
+                <li key={index}>{point}</li>
+              ))}
+            </ul>
+          </section>
+        )}
       </div>
     </div>
   );

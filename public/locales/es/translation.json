@@ -30,6 +30,7 @@
     "problem_title": "Problema",
     "solution_title": "Solución",
     "features_title": "Features",
-    "challenges_title": "Desafíos Técnicos"
+    "challenges_title": "Desafíos Técnicos",
+    "QA_title": "Análisis y Calidad"
   }
 }

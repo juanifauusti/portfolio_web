@@ -14,7 +14,14 @@
             "Historial de uso detallado en calendario",
             "Notificaciones recordatorias de límites"
         ],
-        "challenges": "Los mayores desfios tuvieron que ver con la utilización del segundo plano sin afectar el rendimiento de la aplicación, con la implementación del trackeo de uso del celular y encontrar una estetica que fuera atractiva, única y amigable."
+        "challenges": "Los mayores desfios tuvieron que ver con la utilización del segundo plano sin afectar el rendimiento de la aplicación, con la implementación del trackeo de uso del celular y encontrar una estetica que fuera atractiva, única y amigable.",
+        "QADescription": "Para garantizar la estabilidad de Tosty, lideré el proceso de validación técnica asegurando que cada funcionalidad responda a los criterios de aceptación definidos en el roadmap.",
+        "QAPoints": [
+            "API Testing: Validación de endpoints y flujos de datos mediante Postman para asegurar la integridad de la comunicación entre frontend y backend.",
+            "Pruebas Funcionales: Ejecución de planes de prueba manuales sobre componentes críticos de la aplicación móvil y web.",
+            "Análisis de Logs: Monitoreo de la consola y herramientas de desarrollador para la detección y depuración proactiva de errores de lógica.",
+            "Validación de Requerimientos: Control sistemático del progreso del proyecto frente a los hitos del roadmap técnico."
+        ]
     },
     "porlasfamilias": {
         "title": "Landing Page - Proyecto Freelance",
@@ -28,7 +35,14 @@
             "Navegación intuitiva con enfoque en la experiencia del usuario",
             "Modales interactivos para información detallada"
         ],
-        "challenges": "El mayor desafío fue equilibrar una estética moderna con la sobriedad y confianza que requiere un servicio de asesoría familiar, además de asegurar una adaptabilidad perfecta en todos los dispositivos."
+        "challenges": "El mayor desafío fue equilibrar una estética moderna con la sobriedad y confianza que requiere un servicio de asesoría familiar, además de asegurar una adaptabilidad perfecta en todos los dispositivos.",
+        "QADescription": "El enfoque de QA en este proyecto fue garantizar una experiencia de usuario impecable y una navegación fluida, asegurando que la landing page cumpla con los estándares de diseño y accesibilidad.",
+        "QAPoints": [
+            "Cross-Browser Testing: Verificación de la visualización y funcionalidad en diferentes navegadores.",
+            "Responsive Testing: Validación del maquetado en múltiples resoluciones y dispositivos móviles.",
+            "Pruebas de Usabilidad: Evaluación del flujo de navegación para garantizar que el usuario llegue a la información clave sin fricciones.",
+            "Visual Regression: Aseguramiento de que la implementación final coincida exactamente con los diseños de Figma."
+        ]
     },
     "task-management": {
         "title": "Task Management App",
@@ -58,6 +72,13 @@
             "Widget ligero en HTML/JavaScript nativo para fácil utilización",
             "Arquitectura escalable desplegada en Render"
         ],
-        "challenges": "El mayor desafío fue la migración técnica del motor de IA de Gemini a Cohere a mitad del desarrollo, lo que implicó reescribir la lógica de normalización de vectores, ajustar los prompts del sistema (preambles) y asegurar que el widget de frontend mantuviera una latencia baja tras el cambio de infraestructura."
+        "challenges": "El mayor desafío fue la migración técnica del motor de IA de Gemini a Cohere a mitad del desarrollo, lo que implicó reescribir la lógica de normalización de vectores, ajustar los prompts del sistema (preambles) y asegurar que el widget de frontend mantuviera una latencia baja tras el cambio de infraestructura.",
+        "QADescription": "En un sistema de IA, el QA es crítico. Mi labor fue validar que el asistente no 'alucine' y que la búsqueda semántica devuelva resultados precisos basados en el contexto real.",
+        "QAPoints": [
+            "Validación de Integridad de Datos: Pruebas sobre el motor de búsqueda vectorial para asegurar la correcta recuperación de información.",
+            "Prompt Testing: Refinamiento y testeo de preámbulos para garantizar respuestas coherentes y seguras.",
+            "Pruebas de Integración: Validación de la conexión entre el widget de frontend y el backend en Render tras la migración de infraestructura.",
+            "Análisis de Latencia: Pruebas de performance para medir los tiempos de respuesta del modelo tras cambios en los parámetros de la IA."
+        ]
     }
 }

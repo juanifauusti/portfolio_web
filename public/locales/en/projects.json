@@ -14,7 +14,14 @@
             "Detailed usage history in a calendar",
             "Limit reminder notifications"
         ],
-        "challenges": "The biggest challenges were related to utilizing background processes without affecting app performance, implementing mobile usage tracking, and finding an aesthetic that was attractive, unique, and friendly."
+        "challenges": "The biggest challenges were related to utilizing background processes without affecting app performance, implementing mobile usage tracking, and finding an aesthetic that was attractive, unique, and friendly.",
+        "QADescription": "To ensure the stability of Tosty, I led the technical validation process, ensuring that each feature meets the defined acceptance criteria in the roadmap.",
+        "QAPoints": [
+            "API Testing: Validation of endpoints and data flows using Postman to ensure the integrity of communication between frontend and backend.",
+            "Functional Testing: Execution of manual test plans on critical components of the mobile and web application.",
+            "Log Analysis: Monitoring of console and developer tools for proactive detection and debugging of logic errors.",
+            "Requirements Validation: Systematic control of project progress against technical roadmap milestones."
+        ]
     },
     "porlasfamilias": {
         "title": "Landing Page - Freelance Project",
@@ -28,7 +35,14 @@
             "Intuitive navigation focused on user experience",
             "Interactive modals for detailed information"
         ],
-        "challenges": "The biggest challenge was balancing a modern aesthetic with the sobriety and trust required for a family counseling service, as well as ensuring perfect adaptability across all devices."
+        "challenges": "The biggest challenge was balancing a modern aesthetic with the sobriety and trust required for a family counseling service, as well as ensuring perfect adaptability across all devices.",
+        "QADescription": "The QA approach in this project was to ensure an impeccable user experience and smooth navigation, guaranteeing that the landing page meets design and accessibility standards.",
+        "QAPoints": [
+            "Cross-Browser Testing: Verification of visualization and functionality across different browsers.",
+            "Responsive Testing: Validation of the layout across multiple resolutions and mobile devices.",
+            "Usability Testing: Evaluation of the navigation flow to ensure users can access key information without friction.",
+            "Visual Regression: Assurance that the final implementation matches exactly with the Figma designs."
+        ]
     },
     "task-management": {
         "title": "Task Management App",
@@ -45,6 +59,7 @@
             "Relational database integrated with Entity Framework Core"
         ],
         "challenges": "The main challenges included configuring CORS for secure communication between Vercel and Render, and orchestrating automatic migrations in a cloud PostgreSQL database environment."
+
     },
     "chatbot": {
         "title": "AI Assistant with website context",
@@ -58,6 +73,13 @@
             "Lightweight widget in native HTML/JavaScript for easy integration",
             "Scalable architecture deployed on Render"
         ],
-        "challenges": "The biggest challenge was the technical migration of the AI engine from Gemini to Cohere mid-development, which involved rewriting the vector normalization logic, adjusting system prompts (preambles), and ensuring the frontend widget maintained low latency after the infrastructure change."
+        "challenges": "The biggest challenge was the technical migration of the AI engine from Gemini to Cohere mid-development, which involved rewriting the vector normalization logic, adjusting system prompts (preambles), and ensuring the frontend widget maintained low latency after the infrastructure change.",
+        "QADescription": "In an AI system, QA is critical. My role was to validate that the assistant does not 'hallucinate' and that the semantic search returns precise results based on the real context.",
+        "QAPoints": [
+            "Data Integrity Validation: Tests on the vector search engine to ensure correct information retrieval.",
+            "Prompt Testing: Refinement and testing of system prompts to guarantee coherent and safe responses.",
+            "Integration Tests: Validation of the connection between the frontend widget and the backend on Render after the infrastructure migration.",
+            "Latency Analysis: Performance tests to measure response times of the model after changes in the AI parameters."
+        ]
     }
 }

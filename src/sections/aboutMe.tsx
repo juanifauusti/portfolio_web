@@ -20,7 +20,10 @@ export default function AboutMe() {
     "Express",
     "MongoDB",
     "MySQL",
-    "Prisma"
+    "Prisma",
+    "QA Manual",
+    "UML & Diagraming",
+    "Testing Funcional"
   ];
 
   const sectionRef = useRef<HTMLDivElement | null>(null);
