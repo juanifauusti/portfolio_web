@@ -56,6 +56,9 @@ export default function Hero() {
             {t("hero.cv_button", { defaultValue: "Descargar CV" })}
           </button>
           <div className="dropdown-content">
+            <a href="/JuanaCalzada-Frontend.pdf" download>
+              Frontend
+            </a>
             <a href="/JuanaCalzada-Dev.pdf" download>
               DEV
             </a>
