@@ -23,7 +23,8 @@ export default function AboutMe() {
     "Prisma",
     "QA Manual",
     "UML & Diagraming",
-    "Testing Funcional"
+    "Testing Funcional",
+    "Selenium IDE"
   ];
 
   const sectionRef = useRef<HTMLDivElement | null>(null);

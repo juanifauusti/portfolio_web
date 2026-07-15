@@ -1,36 +1,36 @@
 {
   "hero": {
     "title": "Hi, I'm Juana",
-    "description": "Junior Frontend Developer in continuous training, with a technical background in IT and experience in real projects. Passionate about continuous growth and creating clear, functional, and user-centered interfaces.",
+    "description": "Computer Engineering student and IT Technician interested in Frontend Development, Quality Assurance, and Project Management. Skilled in React, React Native, JavaScript, TypeScript, .NET, and SQL Server.",
     "cv_button": "Download CV"
   },
   "about": {
     "title": "About Me",
-    "p1": "I am currently studying Computer Engineering and graduated from a technical high school specializing in IT. This background allowed me to develop a structured and solid approach to problem-solving.",
-    "p2": "I have experience in interface development using a component-based structure, prioritizing reusability, code organization, and responsive adaptation. Experience in implementation, visual testing, and deployment processes.",
+    "p1": "I'm currently pursuing a degree in Computer Engineering at UNLaM and graduated as an IT Technician. My education has given me a solid foundation in programming, systems analysis, and software development.",
+    "p2": "I'm interested in contributing to projects where I can combine technical skills with organization, testing, and teamwork. I enjoy learning new technologies and taking on challenges that help me grow professionally.",
     "tech_title": "Technologies"
   },
   "projects_section": {
-    "title": "My latest projects",
-    "subtitle": "I have worked on various projects ranging from websites to mobile applications",
-    "view_project": "View project",
-    "view_more": "View more projects"
+    "title": "My Latest Projects",
+    "subtitle": "I've worked on a variety of projects, from websites to mobile applications.",
+    "view_project": "View Project",
+    "view_more": "View More Projects"
   },
   "all_projects": {
     "back": "← Back",
-    "title": "All my projects",
-    "subtitle": "Explore the complete list of my work"
+    "title": "All Projects",
+    "subtitle": "Explore my complete portfolio"
   },
   "project_detail": {
-    "back": "← Back to projects",
-    "not_found": "Project not found",
-    "go_live": "Go to project",
+    "back": "← Back to Projects",
+    "not_found": "Project Not Found",
+    "go_live": "Visit Project",
     "view_github": "View Code on GitHub",
     "download_docs": "Download Documentation",
     "problem_title": "Problem",
     "solution_title": "Solution",
     "features_title": "Features",
     "challenges_title": "Technical Challenges",
-    "QA_title": "Analysis and Quality"
+    "QA_title": "Analysis & Quality"
   }
 }

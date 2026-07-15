@@ -1,13 +1,13 @@
 {
   "hero": {
     "title": "Hola, soy Juana",
-    "description": "Desarrolladora Frontend jr en continua formación, con base técnica en informática y experiencia en proyectos reales. Interesada en seguir creciendo y crear interfaces claras, funcionales y centradas en el usuario.",
+    "description": "Estudiante de Ingeniería Informática y Técnica en Informática. Me interesa el desarrollo Frontend, Quality Assurance y Project Management, con conocimientos en React, React Native, JavaScript, TypeScript, .NET y SQL Server.",
     "cv_button": "Descargar CV"
   },
   "about": {
     "title": "Sobre mí",
-    "p1": "Actualmente curso Ingeniería en Informática y me gradué de un colegio técnico con orientación en informática. Esta base me permitió desarrollar una mirada estructurada y sólida para la resolución de problemas.",
-    "p2": "Tengo experiencia en desarrollo de interfaces mediante una estructura basada en componentes, priorizando reutilización, organización del código y adaptación responsive. Experiencia en implementación, testing visual y procesos de despliegue.",
+    "p1": "Actualmente estudio Ingeniería Informática en la UNLaM y soy Técnica en Informática. Mi formación me permitió desarrollar una base sólida en programación, análisis de sistemas y desarrollo de software.",
+    "p2": "Me interesa participar en proyectos donde pueda combinar conocimientos técnicos con organización, testing y trabajo en equipo. Disfruto aprender nuevas tecnologías y afrontar desafíos que impulsen mi crecimiento profesional.",
     "tech_title": "Tecnologías"
   },
   "projects_section": {
