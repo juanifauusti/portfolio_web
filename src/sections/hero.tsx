@@ -9,6 +9,7 @@ import Animation from "../assets/images/animation.jpg";
 
 export default function Hero() {
   const { t } = useTranslation("translation");
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [visible, setVisible] = useState(false);
   useEffect(() => {
     setVisible(true);
@@ -52,23 +53,28 @@ export default function Hero() {
         <h1>{t("hero.title")}</h1>
         <p>{t("hero.description")}</p>
         <div className="cv-dropdown">
-          <button className="primary cv-main-btn">
+          <button
+            className="primary cv-main-btn"
+            onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+          >
             {t("hero.cv_button", { defaultValue: "Descargar CV" })}
           </button>
-          <div className="dropdown-content">
-            <a href="/JuanaCalzada-Frontend.pdf" download>
-              Frontend
-            </a>
-            <a href="/JuanaCalzada-Dev.pdf" download>
-              DEV
-            </a>
-            <a href="/JuanaCalzada-QA.pdf" download>
-              QA
-            </a>
-            <a href="/JuanaCalzada-English.pdf" download>
-              English
-            </a>
-          </div>
+          {isDropdownOpen && (
+            <div className="dropdown-content show">
+              <a href="/JuanaCalzada-Frontend.pdf" download>
+                Frontend
+              </a>
+              <a href="/JuanaCalzada-Dev.pdf" download>
+                DEV
+              </a>
+              <a href="/JuanaCalzada-QA.pdf" download>
+                QA
+              </a>
+              <a href="/JuanaCalzada-English.pdf" download>
+                English
+              </a>
+            </div>
+          )}
         </div>
         <div className="icons">
           <a
@@ -82,7 +88,7 @@ export default function Hero() {
             <img src={Gmail} alt="icono de gmail" />
           </a>
           <a
-            href="www.linkedin.com/in/juanacalzada"
+            href="https://www.linkedin.com/in/juanacalzada/"
             target="_blank"
             rel="noopener noreferrer"
           >
