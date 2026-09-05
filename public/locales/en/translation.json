@@ -1,36 +1,7 @@
 {
-  "hero": {
-    "title": "Hi, I'm Juana",
-    "description": "Computer Engineering student and IT Technician interested in Frontend Development, Quality Assurance, and Project Management. Skilled in React, React Native, JavaScript, TypeScript, .NET, and SQL Server.",
-    "cv_button": "Download CV"
-  },
-  "about": {
-    "title": "About Me",
-    "p1": "I'm currently pursuing a degree in Computer Engineering at UNLaM and graduated as an IT Technician. My education has given me a solid foundation in programming, systems analysis, and software development.",
-    "p2": "I'm interested in contributing to projects where I can combine technical skills with organization, testing, and teamwork. I enjoy learning new technologies and taking on challenges that help me grow professionally.",
-    "tech_title": "Technologies"
-  },
-  "projects_section": {
-    "title": "My Latest Projects",
-    "subtitle": "I've worked on a variety of projects, from websites to mobile applications.",
-    "view_project": "View Project",
-    "view_more": "View More Projects"
-  },
-  "all_projects": {
-    "back": "← Back",
-    "title": "All Projects",
-    "subtitle": "Explore my complete portfolio"
-  },
-  "project_detail": {
-    "back": "← Back to Projects",
-    "not_found": "Project Not Found",
-    "go_live": "Visit Project",
-    "view_github": "View Code on GitHub",
-    "download_docs": "Download Documentation",
-    "problem_title": "Problem",
-    "solution_title": "Solution",
-    "features_title": "Features",
-    "challenges_title": "Technical Challenges",
-    "QA_title": "Analysis & Quality"
+  "navbar": {
+    "home": "Home",
+    "about": "About Me",
+    "projects": "Projects"
   }
 }

@@ -1,12 +1,8 @@
-import { useEffect, useState } from "react";
-import "./styles/App.css";
 import ScrollToTop from "./components/scrollToTop";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useTranslation } from "react-i18next";
 import { Analytics } from "@vercel/analytics/react";
+import { Navbar } from "./components/navbar";
 import Hero from "./sections/hero";
-import AboutMe from "./sections/aboutMe";
-import Projects from "./sections/projects";
 import ProjectDetail from "./pages/projectDetail";
 import AllProjects from "./pages/allProjects";
 
@@ -14,93 +10,15 @@ function Home() {
   return (
     <div className="app-container">
       <Hero />
-      <AboutMe />
-      <Projects />
     </div>
   );
 }
 
 function App() {
-  const { i18n } = useTranslation();
-
-  const toggleLanguage = () => {
-    const newLang = i18n.language.startsWith("es") ? "en" : "es";
-    i18n.changeLanguage(newLang);
-  };
-
-  const [theme, setTheme] = useState(() => {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme) return savedTheme;
-
-    return globalThis.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light";
-  });
-
-  const [isOpen, setIsOpen] = useState(false);
-
-  useEffect(() => {
-    document.body.className = theme;
-    localStorage.setItem("theme", theme);
-  }, [theme]);
-
-  useEffect(() => {
-    const mediaQuery = globalThis.matchMedia("(prefers-color-scheme: dark)");
-
-    const handleChange = (e: MediaQueryListEvent) => {
-      if (!localStorage.getItem("theme")) {
-        setTheme(e.matches ? "dark" : "light");
-      }
-    };
-
-    mediaQuery.addEventListener("change", handleChange);
-    return () => mediaQuery.removeEventListener("change", handleChange);
-  }, []);
-
-  const themes = [
-    { id: "dark", label: "Oscuro" },
-    { id: "light", label: "Claro" },
-    { id: "terminal", label: "Terminal" },
-    { id: "nature", label: "Nature" },
-    { id: "cyberpunk", label: "Cyberpunk" },
-  ];
-
   return (
     <Router>
       <ScrollToTop />
-
-      <div className={`theme-menu-container ${isOpen ? "open" : ""}`}>
-        <button
-          className={`main-theme-btn ${theme}`}
-          onClick={() => setIsOpen(!isOpen)}
-          aria-label="Abrir menú de temas"
-        >
-          <div className="current-theme-indicator" />
-        </button>
-
-        <div className="theme-options">
-          {themes.map((t) => (
-            <button
-              key={t.id}
-              className={`theme-opt-btn ${theme === t.id ? "active" : ""}`}
-              onClick={() => {
-                setTheme(t.id);
-                setIsOpen(false);
-              }}
-              title={t.label}
-            >
-              <span className={`dot ${t.id}`} />
-            </button>
-          ))}
-        </div>
-      </div>
-
-      <div className="lang-switcher-container">
-        <button onClick={toggleLanguage} className="lang-btn">
-          {i18n.language.startsWith("es") ? "EN" : "ES"}
-        </button>
-      </div>
-
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<AllProjects />} />

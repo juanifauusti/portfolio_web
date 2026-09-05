@@ -1,36 +1,7 @@
 {
-  "hero": {
-    "title": "Hola, soy Juana",
-    "description": "Estudiante de Ingeniería Informática y Técnica en Informática. Me interesa el desarrollo Frontend, Quality Assurance y Project Management, con conocimientos en React, React Native, JavaScript, TypeScript, y .NET.",
-    "cv_button": "Descargar CV"
-  },
-  "about": {
-    "title": "Sobre mí",
-    "p1": "Actualmente estudio Ingeniería Informática en la UNLaM y soy Técnica en Informática. Mi formación me permitió desarrollar una base sólida en programación, análisis de sistemas y desarrollo de software.",
-    "p2": "Me interesa participar en proyectos donde pueda combinar conocimientos técnicos con organización, testing y trabajo en equipo. Disfruto aprender nuevas tecnologías y afrontar desafíos que impulsen mi crecimiento profesional.",
-    "tech_title": "Tecnologías"
-  },
-  "projects_section": {
-    "title": "Mis últimos proyectos",
-    "subtitle": "He trabajado en diferentes proyectos desde páginas web hasta aplicaciones móviles",
-    "view_project": "Ver proyecto",
-    "view_more": "Ver más proyectos"
-  },
-  "all_projects": {
-    "back": "← Volver",
-    "title": "Todos mis proyectos",
-    "subtitle": "Explorá el listado completo de mis trabajos"
-  },
-  "project_detail": {
-    "back": "← Volver a proyectos",
-    "not_found": "Proyecto no encontrado",
-    "go_live": "Ir al proyecto",
-    "view_github": "Ver Código en GitHub",
-    "download_docs": "Descargar Documentación",
-    "problem_title": "Problema",
-    "solution_title": "Solución",
-    "features_title": "Features",
-    "challenges_title": "Desafíos Técnicos",
-    "QA_title": "Análisis y Calidad"
+  "navbar":{
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "projects": "Proyectos"
   }
 }

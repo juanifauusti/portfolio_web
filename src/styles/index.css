@@ -1,94 +1,36 @@
 :root {
-  --font-title: "Poppins", sans-serif;
-  --font-body: "Inter", sans-serif;
+  --font-title: "Bakbak One", sans-serif;
+  --font-body: "IBM Plex Mono", sans-serif;
 
-  --bg-color: #0e0725;
-  --text-color: #ffffff;
-
-  --card-bg: #350571;
-
-  --primary: #c9a6ff;
-  --primary-strong: #4c1d95;
-
-  --button-bg: #42048a;
-  --button-text: #ffffff;
+  --text-color: #f6f1f5;
+  --secondary-text: #92a3bc;
+  --shadow-blue: #7d91b0;
+  --bg-color: #180d35;
+  --button-color: #3e2854;
+  --second-button: #59406f;
+  --details: #9a72b0;
 }
 
 .light {
-  --bg-color: #f8f9fa;       
-  --text-color: #1a1a1a;     
-
-  --card-bg: #e9d5ff;        
-
-  --primary: #c9a6ff;        
-  --primary-strong: #4c1d95;
-
-  --button-bg: #6d28d9;      
-  --button-text: #ffffff;
-
-  --tag-bg: #ffffff;         
-  --tag-text: #6d28d9;
-}
-
-.terminal{
-  --bg-color: #000000;
-  --text-color: #00ff41; 
-  --card-bg: #0a0a0a;
-  --primary: #00ff41;
-  --primary-strong: #008f11;
-  --button-bg: #003b00;
-  --button-text: #00ff41;
-  --tag-bg: #003b00;
-  --tag-text: #00ff41;
-  
-  --font-title: 'JetBrains Mono', 'Courier New', monospace;
-  --font-body: "Lucida Console", Monaco, monospace;
-}
-
-.nature {
-  --bg-color: #fdfaf5;       
-  --text-color: #2d3e30;     
-  --card-bg: #d1cc98;        
-  
-  --primary: #dce3c5;        
-  --primary-strong: #4a5d23; 
-  
-  --button-bg: #8b7355;      
-  --button-text: #ffffff;
-  
-  --tag-bg: #6b8e23;         
-  --tag-text: #4a5d23;
-
-  --font-title: "Georgia", serif; 
-  --font-body: "Inter", sans-serif;
-}
-
-.cyberpunk {
-  --bg-color: #050505;       
-  --text-color: #00ffff;     
-  --card-bg: #1a0033;        
-  
-  --primary: #ff00ff;        
-  --primary-strong: #bc00bc; 
-  
-  --button-bg: #ff00ff;      
-  --button-text: #000000;
-  
-  --tag-bg: #330066;         
-  --tag-text: #ff00ff;
-
-  --font-title: "Orbitron", sans-serif; 
-  --font-body: "Space Mono", monospace;
+  --text-color: #1a1a1a;
+  --secondary-text: #6d28d9;
+  --shadow-blue: #c9a6ff;
+  --bg-color: #f8f9fa;
+  --button-color: #6d28d9;
+  --second-button: #4c1d95;
+  --details: #6d28d9;
 }
 
 body {
   margin: 0;
   background-color: var(--bg-color);
   color: var(--text-color);
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
   font-weight: 500;
   line-height: 1.5;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 h1,
